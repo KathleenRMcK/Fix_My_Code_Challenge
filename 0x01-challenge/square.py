@@ -1,18 +1,13 @@
 #!/usr/bin/python3
 
-class square():
 
-    width = 0
-    height = 0
+class Square():
+    """ Square class """
 
-
-    def __init__(self, *args, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
-        if self.width < self.height:
-            self.width = self.height
-        elif self.height < self.width:
-            self.height = self.width
+    def __init__(self, width=0, height=0):
+        """ simplify square init """
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
